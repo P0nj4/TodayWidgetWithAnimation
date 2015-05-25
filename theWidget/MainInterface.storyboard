@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Oswald-Light.otf">
+            <string>Oswald-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqP-WG-WYU">
+                                <rect key="frame" x="0.0" y="10" width="310" height="255"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAJ-CE-p5Y" userLabel="textBackgroundView">
+                                        <rect key="frame" x="0.0" y="135" width="310" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El conductor fue transportado al Centro Médico de Río Piedras en condición grave, informó la Policía.  (Suministrada)" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rch-2O-uho">
+                                        <rect key="frame" x="25" y="140" width="260" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="CWu-rs-zbi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guardia_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0AV-Ci-pDx">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="135"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="135" id="tpc-Mf-RJ0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-s5-vzU">
+                                        <rect key="frame" x="283" y="184" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="4I2-VL-v1H"/>
+                                            <constraint firstAttribute="height" constant="22" id="oWv-oI-30c"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="btnInfoButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hR0-nJ-7Dh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Rch-2O-uho" secondAttribute="bottom" constant="5" id="C8f-ls-PG4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rch-2O-uho" secondAttribute="trailing" constant="25" id="GgR-uh-1k8"/>
+                                    <constraint firstAttribute="trailing" secondItem="0AV-Ci-pDx" secondAttribute="trailing" id="HZP-Ka-ayz"/>
+                                    <constraint firstAttribute="trailing" secondItem="1hq-s5-vzU" secondAttribute="trailing" constant="5" id="O5y-1B-biY"/>
+                                    <constraint firstItem="0AV-Ci-pDx" firstAttribute="top" secondItem="sqP-WG-WYU" secondAttribute="top" id="Urd-KS-AXR"/>
+                                    <constraint firstItem="Rch-2O-uho" firstAttribute="height" secondItem="SAJ-CE-p5Y" secondAttribute="height" constant="-10" id="dDe-EF-BJd"/>
+                                    <constraint firstItem="0AV-Ci-pDx" firstAttribute="leading" secondItem="sqP-WG-WYU" secondAttribute="leading" id="emZ-nW-Rw6"/>
+                                    <constraint firstItem="1hq-s5-vzU" firstAttribute="centerY" secondItem="Rch-2O-uho" secondAttribute="centerY" id="iUE-tc-kid"/>
+                                    <constraint firstItem="SAJ-CE-p5Y" firstAttribute="top" secondItem="0AV-Ci-pDx" secondAttribute="bottom" id="jDL-fA-74P"/>
+                                    <constraint firstItem="SAJ-CE-p5Y" firstAttribute="leading" secondItem="sqP-WG-WYU" secondAttribute="leading" id="pmF-fO-hV7"/>
+                                    <constraint firstAttribute="trailing" secondItem="SAJ-CE-p5Y" secondAttribute="trailing" id="qmM-IA-aj0"/>
+                                    <constraint firstItem="Rch-2O-uho" firstAttribute="top" secondItem="0AV-Ci-pDx" secondAttribute="bottom" constant="5" id="rlF-m7-7xa"/>
+                                    <constraint firstItem="Rch-2O-uho" firstAttribute="leading" secondItem="sqP-WG-WYU" secondAttribute="leading" constant="25" id="wU3-Jf-hdu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-Go-muC">
+                                <rect key="frame" x="223" y="270" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IaP-1A-hoW"/>
+                                    <constraint firstAttribute="width" constant="46" id="lds-Sw-M6R"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnShowNextPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="ISh-uQ-hid"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZHw-Go-muC" firstAttribute="top" secondItem="sqP-WG-WYU" secondAttribute="bottom" constant="5" id="2aT-Rk-4Lc"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="sqP-WG-WYU" secondAttribute="bottom" priority="999" constant="50" id="7kU-fz-e1M"/>
+                            <constraint firstItem="sqP-WG-WYU" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="10" id="CJU-PX-NS1"/>
+                            <constraint firstItem="sqP-WG-WYU" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="DQV-SE-QeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="sqP-WG-WYU" secondAttribute="trailing" constant="10" id="Gxb-a5-eSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZHw-Go-muC" secondAttribute="trailing" constant="35" id="m5X-q9-N7d"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="315"/>
+                    <connections>
+                        <outlet property="btnInfoButton" destination="1hq-s5-vzU" id="QEf-Zx-lMQ"/>
+                        <outlet property="containerView" destination="sqP-WG-WYU" id="0B3-YJ-m1z"/>
+                        <outlet property="imageView" destination="0AV-Ci-pDx" id="hkq-Cb-jO2"/>
+                        <outlet property="lblNewsText" destination="Rch-2O-uho" id="S43-ey-tJL"/>
+                        <outlet property="textBackgroundView" destination="SAJ-CE-p5Y" id="Mn7-nh-ggc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="284.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guardia_1.jpg" width="618" height="306"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

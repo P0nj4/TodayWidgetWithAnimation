@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CDA4E150-DCB3-4367-8859-E4F102576369</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9CAEE35EDBAA71D8B4E5509FE7F52BD6D359F6FA</key>
+		<string>https://theelectricfactory.git.beanstalkapp.com/primerahora_iphone.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9CAEE35EDBAA71D8B4E5509FE7F52BD6D359F6FA</key>
+		<string>PH/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://theelectricfactory.git.beanstalkapp.com/primerahora_iphone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9CAEE35EDBAA71D8B4E5509FE7F52BD6D359F6FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CAEE35EDBAA71D8B4E5509FE7F52BD6D359F6FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PH</string>
+		</dict>
+	</array>
+</dict>
+</plist>
