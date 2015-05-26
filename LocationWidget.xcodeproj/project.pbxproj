@@ -347,6 +347,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
 						};
 					};
 				};
@@ -662,6 +665,7 @@
 				4480974E1B14BBA70039AC4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BF056371B138A12006FE10A /* Build configuration list for PBXProject "LocationWidget" */ = {
 			isa = XCConfigurationList;
