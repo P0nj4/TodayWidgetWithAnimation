@@ -8,6 +8,8 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "LastestNewsManager.h"
+#import "WidgetLastNews.h"
 
 @interface TodayViewController () <NCWidgetProviding>
 @property (weak, nonatomic) IBOutlet UIView *containerView;
@@ -18,6 +20,11 @@
 - (IBAction)btnInfoButtonPressed:(id)sender;
 
 @property (nonatomic) BOOL first;
+
+//VARS
+@property (nonatomic, strong) LastestNewsManager *lastestNewsManager;
+@property (nonatomic, strong) NSArray *arrayOfNews;
+@property (nonatomic) NSInteger currentIndex;
 @end
 
 @implementation TodayViewController
@@ -34,6 +41,11 @@
     blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.textBackgroundView addSubview:blurEffectView];
     self.textBackgroundView.alpha = 0.3;
+    
+    if (!self.lastestNewsManager) {
+        self.lastestNewsManager = [[LastestNewsManager alloc] init];
+    }
+    
 }
 
 - (void)viewDidLayoutSubviews {
@@ -46,13 +58,23 @@
 }
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
-    // Perform any setup necessary in order to update the view.
-    
-    // If an error is encountered, use NCUpdateResultFailed
-    // If there's no update required, use NCUpdateResultNoData
-    // If there's an update, use NCUpdateResultNewData
-
-    completionHandler(NCUpdateResultNewData);
+    self.containerView.alpha = 0;
+    [self.lastestNewsManager loadLastestNewsWithSuccessCompletition:^(NSDictionary *result) {
+        self.arrayOfNews = [result objectForKey:kLastestNewsManagerLastestNewsArray];
+        if (self.currentIndex >= self.arrayOfNews.count) {
+            self.currentIndex = 0;
+        }
+        if (self.arrayOfNews.count == 0) {
+            completionHandler(NCUpdateResultFailed);
+        } else {
+            [self displayNews:[[result objectForKey:kLastestNewsManagerLastestNewsArray] objectAtIndex:self.currentIndex]];
+            self.containerView.alpha = 1;
+            completionHandler(NCUpdateResultNewData);
+        }
+    } onFailCompletition:^(NSError *error) {
+        NSLog(@"%@", error);
+        completionHandler(NCUpdateResultFailed);
+    }];
 }
 
 -(void)viewWillTransitionToSize:(CGSize)size
@@ -62,7 +84,7 @@
     [coordinator animateAlongsideTransition:
      ^(id<UIViewControllerTransitionCoordinatorContext> context)
      {
-         [self.containerView setAlpha:1.0];
+         //[self.containerView setAlpha:1.0];
      } completion:nil];
 }
 
@@ -85,14 +107,14 @@
     overlayView.alpha = 0;
     [self.view addSubview:overlayView];
     self.containerView.alpha = 0;
-
-    if (!self.first) {
-        self.imageView.image = [UIImage imageNamed:@"corky2.jpg"];
-        self.lblNewsText.text = @"En condición crítica, pero estable, hijo del baloncelista Andrés Ortiz";
-    } else {
-        self.imageView.image = [UIImage imageNamed:@"guardia_1.jpg"];
-        self.lblNewsText.text = @"El conductor fue transportado al Centro Médico de Río Piedras en condición grave, informó la Policía.  (Suministrada)";
-    }
+    
+    if (self.currentIndex + 1 >= self.arrayOfNews.count) {
+        self.currentIndex = 0;
+    } else
+        self.currentIndex++;
+    
+    [self displayNews:[self.arrayOfNews objectAtIndex:self.currentIndex]];
+    
     self.first = !self.first;
     
     [UIView animateWithDuration:0.6 animations:^{
@@ -108,8 +130,18 @@
             [imgView removeFromSuperview];
         }];
     }];
-    
 }
+
+- (void)displayNews:(NSDictionary *)newsData {
+    WidgetLastNews *aux = [[WidgetLastNews alloc] initWithDictionay:newsData];
+    self.lblNewsText.text = aux.title;
+    UIImage *img = nil;
+    if (aux.imageData) {
+        img = [UIImage imageWithData:aux.imageData];
+    }
+    self.imageView.image = img;
+}
+
 - (IBAction)btnInfoButtonPressed:(id)sender {
 }
 @end

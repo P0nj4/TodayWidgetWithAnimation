@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B51DF001B13B4AE00525BE0 /* corky2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B51DEFF1B13B4AE00525BE0 /* corky2.jpg */; };
+		4480972D1B14BB8B0039AC4A /* LastestNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480972C1B14BB8B0039AC4A /* LastestNewsManager.m */; };
+		448097381B14BBA70039AC4A /* lastestNewsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 448097371B14BBA70039AC4A /* lastestNewsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4480974A1B14BBA70039AC4A /* lastestNewsManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448097331B14BBA70039AC4A /* lastestNewsManager.framework */; };
+		4480974B1B14BBA70039AC4A /* lastestNewsManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 448097331B14BBA70039AC4A /* lastestNewsManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		448097531B14BC0E0039AC4A /* LastestNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480972C1B14BB8B0039AC4A /* LastestNewsManager.m */; };
+		448097561B14BCAE0039AC4A /* corky2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 448097541B14BCAE0039AC4A /* corky2.jpg */; };
+		448097571B14BCAE0039AC4A /* guardia_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 448097551B14BCAE0039AC4A /* guardia_1.jpg */; };
+		448097581B14BCF40039AC4A /* lastestNewsManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448097331B14BBA70039AC4A /* lastestNewsManager.framework */; };
+		4480975A1B14D2D90039AC4A /* lastestNews.plist in Resources */ = {isa = PBXBuildFile; fileRef = 448097591B14D2D90039AC4A /* lastestNews.plist */; };
+		4480978B1B1508140039AC4A /* WidgetLastNews.h in Headers */ = {isa = PBXBuildFile; fileRef = 448097891B1508130039AC4A /* WidgetLastNews.h */; };
+		4480978C1B1508140039AC4A /* WidgetLastNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480978A1B1508140039AC4A /* WidgetLastNews.m */; };
+		4480978D1B1508140039AC4A /* WidgetLastNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480978A1B1508140039AC4A /* WidgetLastNews.m */; };
 		4BB799811B13A13C00B78CA8 /* Oswald-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7997E1B13A13C00B78CA8 /* Oswald-Bold.otf */; };
 		4BB799821B13A13C00B78CA8 /* Oswald-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7997F1B13A13C00B78CA8 /* Oswald-Light.otf */; };
 		4BB799831B13A13C00B78CA8 /* Oswald-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB799801B13A13C00B78CA8 /* Oswald-Regular.otf */; };
@@ -17,21 +28,19 @@
 		4BF0564B1B138A12006FE10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF056491B138A12006FE10A /* Main.storyboard */; };
 		4BF0564D1B138A12006FE10A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF0564C1B138A12006FE10A /* Images.xcassets */; };
 		4BF056501B138A12006FE10A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF0564E1B138A12006FE10A /* LaunchScreen.xib */; };
-		4BF0565C1B138A13006FE10A /* LocationWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF0565B1B138A13006FE10A /* LocationWidgetTests.m */; };
 		4BF0566C1B138A21006FE10A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF0566B1B138A21006FE10A /* NotificationCenter.framework */; };
 		4BF056721B138A21006FE10A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF056711B138A21006FE10A /* TodayViewController.m */; };
 		4BF056741B138A21006FE10A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF056731B138A21006FE10A /* MainInterface.storyboard */; };
 		4BF056771B138A21006FE10A /* theWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4BF056691B138A21006FE10A /* theWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4BF0567D1B138D51006FE10A /* guardia_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BF0567C1B138D51006FE10A /* guardia_1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4BF056561B138A13006FE10A /* PBXContainerItemProxy */ = {
+		448097481B14BBA70039AC4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4BF056341B138A12006FE10A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4BF0563B1B138A12006FE10A;
-			remoteInfo = LocationWidget;
+			remoteGlobalIDString = 448097321B14BBA70039AC4A;
+			remoteInfo = lastestNewsManager;
 		};
 		4BF056751B138A21006FE10A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -43,6 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4480974F1B14BBA70039AC4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4480974B1B14BBA70039AC4A /* lastestNewsManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BF0567B1B138A21006FE10A /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,7 +77,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B51DEFF1B13B4AE00525BE0 /* corky2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = corky2.jpg; path = ../../../Downloads/corky2.jpg; sourceTree = "<group>"; };
+		4480972B1B14BB8B0039AC4A /* LastestNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastestNewsManager.h; sourceTree = "<group>"; };
+		4480972C1B14BB8B0039AC4A /* LastestNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastestNewsManager.m; sourceTree = "<group>"; };
+		448097331B14BBA70039AC4A /* lastestNewsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lastestNewsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448097361B14BBA70039AC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448097371B14BBA70039AC4A /* lastestNewsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lastestNewsManager.h; sourceTree = "<group>"; };
+		448097541B14BCAE0039AC4A /* corky2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corky2.jpg; sourceTree = "<group>"; };
+		448097551B14BCAE0039AC4A /* guardia_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guardia_1.jpg; sourceTree = "<group>"; };
+		448097591B14D2D90039AC4A /* lastestNews.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lastestNews.plist; sourceTree = "<group>"; };
+		4480975B1B14D61F0039AC4A /* theWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = theWidget.entitlements; sourceTree = "<group>"; };
+		4480975C1B14D7520039AC4A /* LocationWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationWidget.entitlements; sourceTree = "<group>"; };
+		448097891B1508130039AC4A /* WidgetLastNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetLastNews.h; sourceTree = "<group>"; };
+		4480978A1B1508140039AC4A /* WidgetLastNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetLastNews.m; sourceTree = "<group>"; };
 		4BB7997E1B13A13C00B78CA8 /* Oswald-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.otf"; sourceTree = "<group>"; };
 		4BB7997F1B13A13C00B78CA8 /* Oswald-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.otf"; sourceTree = "<group>"; };
 		4BB799801B13A13C00B78CA8 /* Oswald-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.otf"; sourceTree = "<group>"; };
@@ -71,30 +102,27 @@
 		4BF0564A1B138A12006FE10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BF0564C1B138A12006FE10A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BF0564F1B138A12006FE10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4BF056551B138A13006FE10A /* LocationWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BF0565A1B138A13006FE10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BF0565B1B138A13006FE10A /* LocationWidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationWidgetTests.m; sourceTree = "<group>"; };
 		4BF056691B138A21006FE10A /* theWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = theWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF0566B1B138A21006FE10A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		4BF0566F1B138A21006FE10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BF056701B138A21006FE10A /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		4BF056711B138A21006FE10A /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		4BF056731B138A21006FE10A /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
-		4BF0567C1B138D51006FE10A /* guardia_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = guardia_1.jpg; path = ../../../Downloads/guardia_1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BF056391B138A12006FE10A /* Frameworks */ = {
+		4480972F1B14BBA70039AC4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BF056521B138A13006FE10A /* Frameworks */ = {
+		4BF056391B138A12006FE10A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4480974A1B14BBA70039AC4A /* lastestNewsManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448097581B14BCF40039AC4A /* lastestNewsManager.framework in Frameworks */,
 				4BF0566C1B138A21006FE10A /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +138,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		448097341B14BBA70039AC4A /* lastestNewsManager */ = {
+			isa = PBXGroup;
+			children = (
+				448097371B14BBA70039AC4A /* lastestNewsManager.h */,
+				448097351B14BBA70039AC4A /* Supporting Files */,
+			);
+			path = lastestNewsManager;
+			sourceTree = "<group>";
+		};
+		448097351B14BBA70039AC4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				448097361B14BBA70039AC4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4BB7997D1B13A13C00B78CA8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				4BF0563E1B138A12006FE10A /* LocationWidget */,
-				4BF056581B138A13006FE10A /* LocationWidgetTests */,
 				4BF0566D1B138A21006FE10A /* theWidget */,
+				448097341B14BBA70039AC4A /* lastestNewsManager */,
 				4BF0566A1B138A21006FE10A /* Frameworks */,
 				4BF0563D1B138A12006FE10A /* Products */,
 			);
@@ -135,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				4BF0563C1B138A12006FE10A /* LocationWidget.app */,
-				4BF056551B138A13006FE10A /* LocationWidgetTests.xctest */,
 				4BF056691B138A21006FE10A /* theWidget.appex */,
+				448097331B14BBA70039AC4A /* lastestNewsManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +190,7 @@
 		4BF0563E1B138A12006FE10A /* LocationWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4480975C1B14D7520039AC4A /* LocationWidget.entitlements */,
 				4BF056431B138A12006FE10A /* AppDelegate.h */,
 				4BF056441B138A12006FE10A /* AppDelegate.m */,
 				4BF056461B138A12006FE10A /* ViewController.h */,
@@ -152,6 +199,11 @@
 				4BF0564C1B138A12006FE10A /* Images.xcassets */,
 				4BF0564E1B138A12006FE10A /* LaunchScreen.xib */,
 				4BF0563F1B138A12006FE10A /* Supporting Files */,
+				4480972B1B14BB8B0039AC4A /* LastestNewsManager.h */,
+				4480972C1B14BB8B0039AC4A /* LastestNewsManager.m */,
+				448097591B14D2D90039AC4A /* lastestNews.plist */,
+				448097891B1508130039AC4A /* WidgetLastNews.h */,
+				4480978A1B1508140039AC4A /* WidgetLastNews.m */,
 			);
 			path = LocationWidget;
 			sourceTree = "<group>";
@@ -161,23 +213,6 @@
 			children = (
 				4BF056401B138A12006FE10A /* Info.plist */,
 				4BF056411B138A12006FE10A /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4BF056581B138A13006FE10A /* LocationWidgetTests */ = {
-			isa = PBXGroup;
-			children = (
-				4BF0565B1B138A13006FE10A /* LocationWidgetTests.m */,
-				4BF056591B138A13006FE10A /* Supporting Files */,
-			);
-			path = LocationWidgetTests;
-			sourceTree = "<group>";
-		};
-		4BF056591B138A13006FE10A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4BF0565A1B138A13006FE10A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,6 +228,7 @@
 		4BF0566D1B138A21006FE10A /* theWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4480975B1B14D61F0039AC4A /* theWidget.entitlements */,
 				4BF056701B138A21006FE10A /* TodayViewController.h */,
 				4BF056711B138A21006FE10A /* TodayViewController.m */,
 				4BF056731B138A21006FE10A /* MainInterface.storyboard */,
@@ -204,9 +240,9 @@
 		4BF0566E1B138A21006FE10A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4B51DEFF1B13B4AE00525BE0 /* corky2.jpg */,
+				448097541B14BCAE0039AC4A /* corky2.jpg */,
+				448097551B14BCAE0039AC4A /* guardia_1.jpg */,
 				4BB7997D1B13A13C00B78CA8 /* Fonts */,
-				4BF0567C1B138D51006FE10A /* guardia_1.jpg */,
 				4BF0566F1B138A21006FE10A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -214,7 +250,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		448097301B14BBA70039AC4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448097381B14BBA70039AC4A /* lastestNewsManager.h in Headers */,
+				4480978B1B1508140039AC4A /* WidgetLastNews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		448097321B14BBA70039AC4A /* lastestNewsManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4480974C1B14BBA70039AC4A /* Build configuration list for PBXNativeTarget "lastestNewsManager" */;
+			buildPhases = (
+				4480972E1B14BBA70039AC4A /* Sources */,
+				4480972F1B14BBA70039AC4A /* Frameworks */,
+				448097301B14BBA70039AC4A /* Headers */,
+				448097311B14BBA70039AC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lastestNewsManager;
+			productName = lastestNewsManager;
+			productReference = 448097331B14BBA70039AC4A /* lastestNewsManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4BF0563B1B138A12006FE10A /* LocationWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BF0565F1B138A13006FE10A /* Build configuration list for PBXNativeTarget "LocationWidget" */;
@@ -223,34 +289,18 @@
 				4BF056391B138A12006FE10A /* Frameworks */,
 				4BF0563A1B138A12006FE10A /* Resources */,
 				4BF0567B1B138A21006FE10A /* Embed App Extensions */,
+				4480974F1B14BBA70039AC4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4BF056761B138A21006FE10A /* PBXTargetDependency */,
+				448097491B14BBA70039AC4A /* PBXTargetDependency */,
 			);
 			name = LocationWidget;
 			productName = LocationWidget;
 			productReference = 4BF0563C1B138A12006FE10A /* LocationWidget.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4BF056541B138A13006FE10A /* LocationWidgetTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BF056621B138A13006FE10A /* Build configuration list for PBXNativeTarget "LocationWidgetTests" */;
-			buildPhases = (
-				4BF056511B138A13006FE10A /* Sources */,
-				4BF056521B138A13006FE10A /* Frameworks */,
-				4BF056531B138A13006FE10A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4BF056571B138A13006FE10A /* PBXTargetDependency */,
-			);
-			name = LocationWidgetTests;
-			productName = LocationWidgetTests;
-			productReference = 4BF056551B138A13006FE10A /* LocationWidgetTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4BF056681B138A21006FE10A /* theWidget */ = {
 			isa = PBXNativeTarget;
@@ -278,15 +328,26 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "German Pereyra";
 				TargetAttributes = {
+					448097321B14BBA70039AC4A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					4BF0563B1B138A12006FE10A = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					4BF056541B138A13006FE10A = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 4BF0563B1B138A12006FE10A;
+						DevelopmentTeam = 92RHCHQV8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4BF056681B138A21006FE10A = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 92RHCHQV8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -304,27 +365,28 @@
 			projectRoot = "";
 			targets = (
 				4BF0563B1B138A12006FE10A /* LocationWidget */,
-				4BF056541B138A13006FE10A /* LocationWidgetTests */,
 				4BF056681B138A21006FE10A /* theWidget */,
+				448097321B14BBA70039AC4A /* lastestNewsManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		448097311B14BBA70039AC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BF0563A1B138A12006FE10A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4480975A1B14D2D90039AC4A /* lastestNews.plist in Resources */,
 				4BF0564B1B138A12006FE10A /* Main.storyboard in Resources */,
 				4BF056501B138A12006FE10A /* LaunchScreen.xib in Resources */,
 				4BF0564D1B138A12006FE10A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BF056531B138A13006FE10A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,17 +395,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB799831B13A13C00B78CA8 /* Oswald-Regular.otf in Resources */,
-				4B51DF001B13B4AE00525BE0 /* corky2.jpg in Resources */,
+				448097571B14BCAE0039AC4A /* guardia_1.jpg in Resources */,
 				4BF056741B138A21006FE10A /* MainInterface.storyboard in Resources */,
-				4BF0567D1B138D51006FE10A /* guardia_1.jpg in Resources */,
 				4BB799821B13A13C00B78CA8 /* Oswald-Light.otf in Resources */,
 				4BB799811B13A13C00B78CA8 /* Oswald-Bold.otf in Resources */,
+				448097561B14BCAE0039AC4A /* corky2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4480972E1B14BBA70039AC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4480978D1B1508140039AC4A /* WidgetLastNews.m in Sources */,
+				448097531B14BC0E0039AC4A /* LastestNewsManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BF056381B138A12006FE10A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,14 +422,8 @@
 				4BF056481B138A12006FE10A /* ViewController.m in Sources */,
 				4BF056451B138A12006FE10A /* AppDelegate.m in Sources */,
 				4BF056421B138A12006FE10A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BF056511B138A13006FE10A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BF0565C1B138A13006FE10A /* LocationWidgetTests.m in Sources */,
+				4480972D1B14BB8B0039AC4A /* LastestNewsManager.m in Sources */,
+				4480978C1B1508140039AC4A /* WidgetLastNews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +438,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4BF056571B138A13006FE10A /* PBXTargetDependency */ = {
+		448097491B14BBA70039AC4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BF0563B1B138A12006FE10A /* LocationWidget */;
-			targetProxy = 4BF056561B138A13006FE10A /* PBXContainerItemProxy */;
+			target = 448097321B14BBA70039AC4A /* lastestNewsManager */;
+			targetProxy = 448097481B14BBA70039AC4A /* PBXContainerItemProxy */;
 		};
 		4BF056761B138A21006FE10A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -405,6 +470,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4480974D1B14BBA70039AC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = lastestNewsManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4480974E1B14BBA70039AC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lastestNewsManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4BF0565D1B138A13006FE10A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -478,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -489,9 +596,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LocationWidget/LocationWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LocationWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -499,49 +610,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LocationWidget/LocationWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LocationWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		4BF056631B138A13006FE10A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LocationWidgetTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationWidget.app/LocationWidget";
-			};
-			name = Debug;
-		};
-		4BF056641B138A13006FE10A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LocationWidgetTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationWidget.app/LocationWidget";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		4BF056791B138A21006FE10A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = theWidget/theWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -549,6 +633,7 @@
 				INFOPLIST_FILE = theWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -556,9 +641,13 @@
 		4BF0567A1B138A21006FE10A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = theWidget/theWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = theWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -566,6 +655,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4480974C1B14BBA70039AC4A /* Build configuration list for PBXNativeTarget "lastestNewsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4480974D1B14BBA70039AC4A /* Debug */,
+				4480974E1B14BBA70039AC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4BF056371B138A12006FE10A /* Build configuration list for PBXProject "LocationWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -580,15 +677,6 @@
 			buildConfigurations = (
 				4BF056601B138A13006FE10A /* Debug */,
 				4BF056611B138A13006FE10A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4BF056621B138A13006FE10A /* Build configuration list for PBXNativeTarget "LocationWidgetTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BF056631B138A13006FE10A /* Debug */,
-				4BF056641B138A13006FE10A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

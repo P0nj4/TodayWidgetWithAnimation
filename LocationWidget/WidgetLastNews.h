@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface WidgetLastNews : NSObject
+@property (nonatomic, strong) NSNumber *identifier;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSData *imageData;
+- (NSDictionary *)convertToDictionary;
+- (instancetype)initWithDictionay:(NSDictionary *)dictionary;
 
 @end

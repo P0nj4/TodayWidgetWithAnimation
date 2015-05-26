@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LastestNewsManager : NSObject
+#define kLastestNewsManagerLastUpdateTime @"lastUpdate"
+#define kLastestNewsManagerLastestNewsArray @"lastestNews"
 
+@interface LastestNewsManager : NSObject
+- (void)loadLastestNewsWithSuccessCompletition:(void (^)(NSDictionary * result))onSuccess onFailCompletition:(void (^)(NSError * error))onFail;
 @end
